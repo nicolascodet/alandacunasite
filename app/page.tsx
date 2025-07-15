@@ -18,18 +18,18 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-md' : 'bg-white/80 backdrop-blur-sm'
+      isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <Image 
                 src="/logo.png" 
                 alt="FedFlo.ai" 
-                width={200} 
-                height={80} 
-                className="h-16 md:h-20 w-auto"
+                width={180} 
+                height={60} 
+                className="h-14 md:h-16 w-auto"
                 priority
               />
             </a>
@@ -77,7 +77,7 @@ const Header = () => {
 const Hero = () => {
   return (
     <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-blue-50 to-white" style={{backgroundImage: 'url("/hero-bg.png")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className="absolute inset-0 bg-white/95"></div>
+      <div className="absolute inset-0 bg-white/90"></div>
       <div className="container mx-auto px-6 pt-20 relative z-10">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-6 leading-tight">
