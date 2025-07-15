@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { ArrowRight, CheckCircle, Zap, Users, Target, Sparkles, Brain, Cpu, Shield, Rocket, Code, Database, Cloud, ChevronRight, Star, Award, TrendingUp, Lock, Globe, Layers } from 'lucide-react'
+import { ArrowRight, CheckCircle, Zap, Brain, Shield, Globe, Layers, Sparkles, Cpu, Rocket } from 'lucide-react'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -33,10 +33,10 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            Acuna Consulting
+            FedFlo.ai
           </motion.div>
           <nav className="hidden md:flex space-x-8">
-            {['Solutions', 'Agile DNA', 'AI Tools', 'Technology', 'About', 'Contact'].map((item, index) => (
+            {['Solutions', 'Why FedFlo', 'About', 'Contact'].map((item, index) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase().replace(' ', '-')}`}
@@ -78,7 +78,7 @@ const Hero = () => {
             className="mb-6"
           >
             <span className="inline-block px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
-              🚀 Enterprise AI • Government Ready • Security First
+              🚀 Purpose-Built for GovCon • 10-200 Employees • $500K-$50M Contracts
             </span>
           </motion.div>
           
@@ -88,9 +88,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight"
           >
-            Modern AI for{' '}
-            <span className="gradient-text">Real-World Operations</span>,{' '}
-            <br />Not Speculation
+            The Automation Platform for{' '}
+            <span className="gradient-text">Growing Government Contractors</span>
           </motion.h1>
 
           <motion.p
@@ -99,9 +98,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-xl md:text-2xl text-gray-600 mb-10 max-w-4xl mx-auto"
           >
-            Rooted in Agile transformation. Supercharged with deployable AI. 
+            Stop drowning in manual processes. Start scaling your business.
             <br />
-            <span className="text-lg text-gray-500 mt-2 block">Delivering secure, scalable AI solutions for government contractors and enterprise organizations.</span>
+            <span className="text-lg text-gray-500 mt-2 block">Built specifically for government contractors with 10-200 employees who are ready to compete at the next level.</span>
           </motion.p>
 
           <motion.div
@@ -115,7 +114,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="bg-primary-600 text-white px-8 py-4 rounded-xl font-semibold text-lg btn-hover-effect flex items-center justify-center gap-2 shadow-lg"
             >
-              Book Strategy Call
+              Learn More
               <ArrowRight className="w-5 h-5" />
             </motion.button>
             <motion.button
@@ -123,7 +122,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="glass border border-gray-200 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center gap-2"
             >
-              Preview AI Stack
+              See How It Works
               <Sparkles className="w-5 h-5" />
             </motion.button>
           </motion.div>
@@ -136,20 +135,20 @@ const Hero = () => {
             className="flex flex-wrap justify-center gap-8 mt-16 text-center"
           >
             <div className="flex flex-col">
-              <span className="text-3xl font-bold text-gray-900">20+</span>
-              <span className="text-sm text-gray-600">Years Experience</span>
+              <span className="text-3xl font-bold text-gray-900">10-200</span>
+              <span className="text-sm text-gray-600">Employee Sweet Spot</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-3xl font-bold text-gray-900">Proven</span>
-              <span className="text-sm text-gray-600">AI Deployments</span>
+              <span className="text-3xl font-bold text-gray-900">$500K-$50M</span>
+              <span className="text-sm text-gray-600">Contract Range</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-3xl font-bold text-gray-900">Trusted</span>
-              <span className="text-sm text-gray-600">by Industry Leaders</span>
+              <span className="text-3xl font-bold text-gray-900">Built for</span>
+              <span className="text-sm text-gray-600">Growing GovCon Firms</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-3xl font-bold text-gray-900">99.9%</span>
-              <span className="text-sm text-gray-600">Security Compliance</span>
+              <span className="text-3xl font-bold text-gray-900">Purpose-Built</span>
+              <span className="text-sm text-gray-600">Not Adapted Software</span>
             </div>
           </motion.div>
         </div>
@@ -182,16 +181,16 @@ const FoundersSection = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Aland Acuna</h3>
               <div className="mb-4">
-                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium mr-2">Certified Scrum Trainer</span>
-                <span className="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">DASA DevOps</span>
+                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium mr-2">GovCon Domain Expert</span>
+                <span className="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">Business Strategy</span>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Enterprise Agile Coach, founder of Agile DNA™, 20+ years of transformation leadership across federal and commercial organizations. Specializes in large-scale Agile implementations and organizational change management.
+                Deep government contracting expertise with years of experience understanding the unique challenges facing small-to-mid-sized contractors. Knows firsthand the operational bottlenecks that prevent firms from scaling.
               </p>
               <div className="mt-4 text-sm text-gray-500">
-                • Led 200+ Agile transformations<br/>
-                • Former Federal CTO Advisory Board<br/>
-                • Published author on Agile methodologies
+                • Government contracting specialist<br/>
+                • Small business growth strategist<br/>
+                • Operational efficiency expert
               </div>
             </motion.div>
             
@@ -202,21 +201,21 @@ const FoundersSection = () => {
               viewport={{ once: true }}
               className="text-center group"
             >
-              <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-blue-600 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white text-xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <Brain className="w-10 h-10" />
+              <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-blue-600 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
+                NC
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">AI Team</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Nicolas Codet</h3>
               <div className="mb-4">
-                <span className="inline-block px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium mr-2">Powered by Thunderbird Labs</span>
-                <span className="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">AI Specialists</span>
+                <span className="inline-block px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium mr-2">Technical Automation Lead</span>
+                <span className="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">AI Architecture</span>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Our AI development team is powered by <strong>Thunderbird Labs</strong>, a leader in AI custom software solutions. Experts in machine learning, natural language processing, and enterprise AI deployment.
+                Technical expertise in building custom automation solutions. Specializes in creating AI-powered workflows that integrate seamlessly with existing systems while maintaining the security and compliance requirements essential to government contracting.
               </p>
               <div className="mt-4 text-sm text-gray-500">
-                • Extensive experience in production AI deployments<br/>
-                • FedRAMP & SOC2 compliant solutions<br/>
-                • Enterprise-grade AI infrastructure
+                • Custom automation development<br/>
+                • AI integration specialist<br/>
+                • Secure system architecture
               </div>
             </motion.div>
           </div>
@@ -229,7 +228,7 @@ const FoundersSection = () => {
             className="text-center border-t border-gray-200 pt-8"
           >
             <p className="text-xl text-gray-600 italic mb-4">
-              Two powerhouses. One mission — bring practical, secure, team-ready AI into real organizations.
+              Two experts. One mission — help small-to-mid-sized government contractors compete at the next level through intelligent automation.
             </p>
             <div className="flex justify-center gap-6 text-sm text-gray-500">
               <div className="flex items-center gap-2">
@@ -256,34 +255,34 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <Brain className="w-8 h-8" />,
-      title: "Agile DNA™ + AI",
-      description: "Embed intelligent workflows into your Agile adoption process with AI-powered automation and insights.",
-      example: "GPT-powered retros, daily standup recorders, backlog grooming bots.",
-      features: ["Automated retrospective analysis", "Sprint velocity prediction", "User story optimization", "Team performance insights"],
+      title: "Email Overload Solution",
+      description: "Stop drowning in email. Our AI automatically categorizes, prioritizes, and surfaces critical contract communications so you can focus on high-value work.",
+      example: "Transform chaos into clarity - know what needs attention now vs. later.",
+      features: ["Smart email categorization", "Contract deadline alerts", "Action item extraction", "Priority inbox management"],
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: <Cpu className="w-8 h-8" />,
-      title: "Agile DNA™ + DevOps",
-      description: "Continuous deployment meets continuous intelligence with AI-enhanced DevOps pipelines.",
-      example: "Copilot for DevOps pipelines, story-to-code analysis, code quality checkers.",
-      features: ["Automated code review", "Deployment risk assessment", "Performance optimization", "Security vulnerability detection"],
+      title: "Proposal Process Automation",
+      description: "Stop losing bids to manual processes. Streamline your proposal development so you can respond to more opportunities with higher quality submissions.",
+      example: "Compete for prime contractor work without prime contractor resources.",
+      features: ["Automated workflows", "Team coordination", "Compliance tracking", "Response quality improvement"],
       color: "from-purple-500 to-purple-600"
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "GovCon Optimization Stack",
-      description: "Specialized AI tools designed for proposal teams, compliance officers, and capture managers in government contracting.",
-      example: "RFP Navigator, Past Performance Generator, Clause Extractor.",
-      features: ["Automated compliance checking", "Proposal win probability scoring", "Contract risk analysis", "Bid/no-bid decision support"],
+      title: "Contract Management Clarity",
+      description: "Eliminate contract chaos. Know exactly where you stand on every contract, what's due when, and what opportunities exist for growth.",
+      example: "Professional contract management without a dedicated contracts team.",
+      features: ["Centralized contract tracking", "Automated compliance alerts", "Performance monitoring", "Growth opportunity identification"],
       color: "from-green-500 to-green-600"
     },
     {
       icon: <Rocket className="w-8 h-8" />,
-      title: "Custom AI Solutions",
-      description: "Bespoke AI tools tailored to your specific business challenges and operational workflows.",
-      example: "Workflow copilots, knowledge search, internal LLM apps — all secure, with fast turnaround.",
-      features: ["Custom model training", "API integrations", "Real-time analytics", "Scalable architecture"],
+      title: "Business Intelligence Dashboard",
+      description: "Make strategic decisions with confidence. Get clear visibility into your pipeline, performance, and growth opportunities without expensive BI tools.",
+      example: "Enterprise-level insights sized for your business reality.",
+      features: ["Pipeline analytics", "Win/loss analysis", "Resource optimization", "Strategic forecasting"],
       color: "from-orange-500 to-orange-600"
     }
   ]
@@ -298,9 +297,9 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Comprehensive AI Solutions</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Built for Your Reality, Not Enterprise Fantasy</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            From Agile transformation to custom AI development, we provide end-to-end solutions that integrate seamlessly with your existing workflows and security requirements.
+            We understand you're too big for spreadsheets but too small for enterprise software. Our automation platform is designed specifically for government contractors ready to scale beyond manual processes.
           </p>
         </motion.div>
 
@@ -344,198 +343,10 @@ const ServicesSection = () => {
   )
 }
 
-const TechnologyStack = () => {
-  const technologies = [
-    {
-      category: "AI & Machine Learning",
-      icon: <Brain className="w-6 h-6" />,
-      tools: ["OpenAI GPT-4", "Azure AI Services", "TensorFlow", "PyTorch", "Hugging Face", "LangChain"],
-      color: "from-blue-500 to-purple-600"
-    },
-    {
-      category: "Cloud & Infrastructure",
-      icon: <Cloud className="w-6 h-6" />,
-      tools: ["AWS", "Azure", "Google Cloud", "Kubernetes", "Docker", "Terraform"],
-      color: "from-green-500 to-blue-500"
-    },
-    {
-      category: "Development & Integration",
-      icon: <Code className="w-6 h-6" />,
-      tools: ["Python", "Node.js", "React", "FastAPI", "GraphQL", "REST APIs"],
-      color: "from-orange-500 to-red-500"
-    },
-    {
-      category: "Data & Analytics",
-      icon: <Database className="w-6 h-6" />,
-      tools: ["PostgreSQL", "MongoDB", "Redis", "Apache Kafka", "Elasticsearch", "Tableau"],
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      category: "Security & Compliance",
-      icon: <Lock className="w-6 h-6" />,
-      tools: ["FedRAMP", "SOC2", "NIST Framework", "Zero Trust", "HashiCorp Vault", "OAuth 2.0"],
-      color: "from-red-500 to-orange-500"
-    },
-    {
-      category: "DevOps & Monitoring",
-      icon: <TrendingUp className="w-6 h-6" />,
-      tools: ["GitHub Actions", "Jenkins", "Prometheus", "Grafana", "ELK Stack", "DataDog"],
-      color: "from-cyan-500 to-blue-500"
-    }
-  ]
-
-  return (
-    <section id="technology" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Enterprise-Grade Technology Stack</h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Built with best-in-class technologies, ensuring security, scalability, and compliance for government and enterprise environments.
-          </p>
-        </motion.div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          {technologies.map((tech, index) => (
-            <motion.div
-              key={tech.category}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -5 }}
-              className="bg-white border border-gray-200 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group"
-            >
-              <div className={`w-12 h-12 bg-gradient-to-r ${tech.color} rounded-lg mb-4 flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
-                {tech.icon}
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">{tech.category}</h3>
-              <div className="space-y-2">
-                {tech.tools.map((tool, idx) => (
-                  <div key={idx} className="flex items-center text-sm text-gray-600">
-                    <div className="w-2 h-2 bg-gray-300 rounded-full mr-3"></div>
-                    {tool}
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
-const ToolsPreview = () => {
-  const tools = [
-    { 
-      name: "Contract Analyzer", 
-      description: "Parse complex agreements instantly with 99% accuracy",
-      status: "demo",
-      details: "AI-powered contract analysis with risk assessment and compliance checking"
-    },
-    { 
-      name: "Pipeline Ranker", 
-      description: "Prioritize opportunities with AI scoring algorithms",
-      status: "demo",
-      details: "Machine learning models trained on historical win/loss data"
-    },
-    { 
-      name: "Proposal Builder Copilot", 
-      description: "AI-assisted proposal development and optimization",
-      status: "soon",
-      details: "Natural language generation for proposal sections and compliance matrices"
-    },
-    { 
-      name: "Internal Knowledge Search", 
-      description: "Find answers across all your documents in seconds",
-      status: "demo",
-      details: "Vector-based semantic search with context-aware responses"
-    },
-    { 
-      name: "Email Thread Summarizer", 
-      description: "Extract key decisions from long email chains",
-      status: "soon",
-      details: "Advanced NLP for action item extraction and decision tracking"
-    },
-    { 
-      name: "SOP Generator", 
-      description: "Create standard procedures from examples automatically",
-      status: "soon",
-      details: "Process automation with compliance verification and version control"
-    },
-    {
-      name: "Compliance Monitor",
-      description: "Real-time compliance tracking and alerts",
-      status: "demo",
-      details: "Automated regulatory compliance checking with audit trails"
-    },
-    {
-      name: "Risk Assessment Engine",
-      description: "AI-powered project and contract risk analysis",
-      status: "demo", 
-      details: "Predictive analytics for risk identification and mitigation strategies"
-    }
-  ]
-
-  return (
-    <section id="ai-tools" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">AI Tools Portfolio</h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            A comprehensive suite of AI-powered tools designed for government contractors and enterprise organizations. Each tool is built with security, compliance, and scalability in mind.
-          </p>
-        </motion.div>
-
-        <div className="grid md:grid-cols-4 gap-6">
-          {tools.map((tool, index) => (
-            <motion.div
-              key={tool.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -5 }}
-              className="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 group"
-            >
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <Zap className="w-6 h-6 text-blue-600" />
-              </div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">{tool.name}</h4>
-              <p className="text-gray-600 text-sm mb-3">{tool.description}</p>
-              <p className="text-xs text-gray-500 mb-4 leading-relaxed">{tool.details}</p>
-              <div className="flex justify-center">
-                <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                  tool.status === 'demo' 
-                    ? 'bg-blue-100 text-blue-700' 
-                    : 'bg-orange-100 text-orange-700'
-                }`}>
-                  {tool.status === 'demo' ? 'Launch Demo' : 'Coming Soon'}
-                </span>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
 
 const MethodologySection = () => {
   return (
-    <section id="agile-dna" className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white relative overflow-hidden">
+    <section id="why-fedflo" className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500 rounded-full mix-blend-soft-light filter blur-xl opacity-30"></div>
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-soft-light filter blur-xl opacity-30"></div>
@@ -556,7 +367,7 @@ const MethodologySection = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold mb-8 italic leading-relaxed"
           >
-            "Agile DNA™ gave organizations the blueprint. This next layer gives them foresight."
+            "You're caught between being too big for spreadsheets and too small for enterprise software. We built FedFlo.ai to fill that gap."
           </motion.blockquote>
           
           <motion.p
@@ -566,7 +377,7 @@ const MethodologySection = () => {
             viewport={{ once: true }}
             className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12"
           >
-            Our AI tooling integrates with your existing Agile, DevOps, and leadership culture. We don't replace workflows. We enhance them — securely, ethically, and with no extra fluff.
+            We know you don't have dedicated IT resources or millions for enterprise systems. Our automation platform is built specifically for government contractors with 10-200 employees who need professional systems without the complexity.
           </motion.p>
         </motion.div>
 
@@ -581,9 +392,9 @@ const MethodologySection = () => {
             <div className="w-16 h-16 bg-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center">
               <Layers className="w-8 h-8" />
             </div>
-            <h3 className="text-xl font-bold mb-4">Agile DNA™ Foundation</h3>
+            <h3 className="text-xl font-bold mb-4">Built for Small-Mid GovCon</h3>
             <p className="text-gray-300">
-              Proven Agile transformation methodology with 20+ years of enterprise success across government and commercial sectors.
+              Designed specifically for firms managing $500K-$50M in contracts. We understand your unique position between small business and prime contractor status.
             </p>
           </motion.div>
 
@@ -597,9 +408,9 @@ const MethodologySection = () => {
             <div className="w-16 h-16 bg-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center">
               <Brain className="w-8 h-8" />
             </div>
-            <h3 className="text-xl font-bold mb-4">AI Integration Layer</h3>
+            <h3 className="text-xl font-bold mb-4">Automation That Works</h3>
             <p className="text-gray-300">
-              Intelligent automation and insights that amplify your team's capabilities without disrupting existing processes.
+              Not generic business software adapted for GovCon - purpose-built automation for the unique compliance, documentation, and operational requirements of this industry.
             </p>
           </motion.div>
 
@@ -613,9 +424,9 @@ const MethodologySection = () => {
             <div className="w-16 h-16 bg-green-500 rounded-full mx-auto mb-6 flex items-center justify-center">
               <Shield className="w-8 h-8" />
             </div>
-            <h3 className="text-xl font-bold mb-4">Security & Compliance</h3>
+            <h3 className="text-xl font-bold mb-4">Growth-Focused Design</h3>
             <p className="text-gray-300">
-              Enterprise-grade security with government compliance standards, ensuring your AI solutions meet the highest requirements.
+              Eliminate the operational bottlenecks that prevent you from competing for larger contracts and growing your business to the next level.
             </p>
           </motion.div>
         </div>
@@ -625,7 +436,7 @@ const MethodologySection = () => {
 }
 
 const SocialProof = () => {
-  const certifications = ['Scrum Alliance', 'AWS Partner', 'CompTIA', 'DASA', 'LeanKanban', 'FedRAMP Ready', 'SOC2 Type II', 'NIST Cybersecurity']
+  const certifications = ['FedRAMP Ready', 'CMMC Level 3', 'ISO 27001', 'SOC2 Type II', 'NIST 800-171', 'GSA Schedule', 'SBA 8(a) Partners', 'IL4/IL5 Capable']
 
   return (
     <section className="py-16 bg-gray-50">
@@ -637,7 +448,7 @@ const SocialProof = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h3 className="text-lg font-semibold text-gray-600 mb-8">Trusted by Government Agencies and Fortune 500 Companies</h3>
+          <h3 className="text-lg font-semibold text-gray-600 mb-8">Built with Government Contracting Standards in Mind</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
             {certifications.map((cert, index) => (
               <motion.div
@@ -676,7 +487,7 @@ const FinalCTA = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
           >
-            You Don't Need a SaaS. You Need a Thought Partner and a Toolkit.
+            Ready to Stop Playing Catch-Up?
           </motion.h2>
           
           <motion.p
@@ -686,7 +497,7 @@ const FinalCTA = () => {
             viewport={{ once: true }}
             className="text-xl text-gray-600 mb-10 max-w-4xl mx-auto"
           >
-            Let's scope something lean. Then build what actually works for your organization's unique challenges and security requirements.
+            You know manual processes are holding you back. You've seen how the big players operate. Now it's time to level the playing field with automation built specifically for firms like yours.
           </motion.p>
           
           <motion.div
@@ -701,14 +512,14 @@ const FinalCTA = () => {
               whileTap={{ scale: 0.95 }}
               className="bg-primary-600 text-white px-10 py-5 rounded-xl font-semibold text-xl btn-hover-effect shadow-lg pulse-glow"
             >
-              Book Discovery Call
+              Learn More
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="glass border border-gray-200 text-gray-700 px-10 py-5 rounded-xl font-semibold text-xl"
             >
-              Download Capability Statement
+              See Case Studies
             </motion.button>
           </motion.div>
         </motion.div>
@@ -724,8 +535,6 @@ export default function Home() {
       <Hero />
       <FoundersSection />
       <ServicesSection />
-      <TechnologyStack />
-      <ToolsPreview />
       <MethodologySection />
       <SocialProof />
       <FinalCTA />

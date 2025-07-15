@@ -1,6 +1,6 @@
-# Acuna Consulting - Modern AI Website
+# FedFlo.ai - Automation Platform for Government Contractors
 
-A sophisticated Next.js website for Acuna Consulting featuring modern design elements, smooth animations, and professional UI components.
+A sophisticated Next.js website for FedFlo.ai - the automation platform built specifically for small-to-mid-sized government contractors (10-200 employees) managing $500K-$50M in annual contracts.
 
 ## 🚀 Features
 
@@ -62,7 +62,7 @@ npm start
 ## 📝 Project Structure
 
 ```
-acuna-consulting/
+fedflo-ai/
 ├── app/
 │   ├── globals.css          # Global styles and custom CSS
 │   ├── layout.tsx           # Root layout component
@@ -132,4 +132,4 @@ Simply connect your git repository and the platform will handle the rest.
 
 ## 📄 License
 
-This project is private and proprietary to Acuna Consulting. 
+This project is private and proprietary to FedFlo.ai. 
