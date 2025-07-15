@@ -21,15 +21,15 @@ const Header = () => {
       isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-28">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <Image 
                 src="/logo.png" 
                 alt="FedFlo.ai" 
-                width={180} 
-                height={60} 
-                className="h-14 md:h-16 w-auto"
+                width={240} 
+                height={80} 
+                className="h-20 md:h-24 w-auto"
                 priority
               />
             </a>
@@ -77,15 +77,15 @@ const Header = () => {
 const Hero = () => {
   return (
     <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-blue-50 to-white" style={{backgroundImage: 'url("/hero-bg.png")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className="absolute inset-0 bg-white/90"></div>
+      <div className="absolute inset-0 bg-white/80"></div>
       <div className="container mx-auto px-6 pt-20 relative z-10">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-6 leading-tight">
-            AI-Powered Operations for Federal Contractors
+            AI Automation for Government Contractors
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-            We automate the repetitive tasks that consume 70% of your day. 
-            Custom solutions built specifically for NAICS 541 firms.
+            We eliminate the manual work that's holding you back. 
+            Custom solutions designed for growing federal contractors.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="#contact" className="bg-blue-900 text-white px-8 py-4 rounded hover:bg-blue-800 transition-colors font-semibold text-lg flex items-center justify-center gap-2">
@@ -133,43 +133,43 @@ const StatsSection = () => {
 const ServicesSection = () => {
   const services = [
     {
-      title: "Email Intelligence System",
-      description: "Process 1000+ daily emails in minutes. Our ML algorithms extract contract mods, cure notices, and action items automatically.",
+      title: "Email Management System",
+      description: "Turn email chaos into organized workflows. Our AI automatically finds what matters and flags what needs action.",
       features: [
-        "Auto-detection of contract modifications",
-        "CLIN-level requirement tracking",
-        "Automated CDRL deadline alerts",
-        "Subcontractor communication routing"
+        "Automatic deadline detection",
+        "Contract modification alerts",
+        "Action item extraction",
+        "Smart inbox prioritization"
       ]
     },
     {
-      title: "Proposal Development Engine",
-      description: "Cut proposal time by 60%. Generate compliant responses using your past performance data and technical approach library.",
+      title: "Proposal Automation",
+      description: "Win more contracts without burning out your team. Streamline proposal development from RFP to submission.",
       features: [
-        "Automated L/M/H compliance matrices",
-        "Section L/M requirement parsing",
-        "Past performance volume generation",
-        "Red Team finding integration"
+        "Compliance matrix automation",
+        "Requirement tracking",
+        "Past performance integration",
+        "Team collaboration tools"
       ]
     },
     {
-      title: "Contract Performance Monitor",
-      description: "Real-time visibility into every task order, IDIQ, and subcontract. Predictive analytics identify at-risk deliverables before they impact CPARS.",
+      title: "Contract Management Platform",
+      description: "Never miss a deliverable again. Track all your contracts, deadlines, and performance metrics in one place.",
       features: [
-        "Multi-vehicle contract tracking",
-        "PoP and option year management",
-        "Burn rate analysis by CLIN",
-        "Automated monthly status reports"
+        "Centralized contract tracking",
+        "Deliverable management",
+        "Performance dashboards",
+        "Automated status reports"
       ]
     },
     {
-      title: "Capture & BD Intelligence",
-      description: "Track opportunities from SAM.gov to award. Analyze win themes, competitor patterns, and pricing strategies across your pipeline.",
+      title: "Business Development Intelligence",
+      description: "Make smarter bid decisions with data. Track opportunities, analyze competition, and improve your win rate.",
       features: [
-        "Automated SAM.gov opportunity matching",
-        "Competitor bid pattern analysis",
-        "Price-to-win modeling by NAICS",
-        "Capture maturity scoring"
+        "Opportunity tracking",
+        "Competitive analysis",
+        "Win/loss insights",
+        "Pipeline management"
       ]
     }
   ]
@@ -182,8 +182,8 @@ const ServicesSection = () => {
             Purpose-Built Solutions
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Purpose-built automation for federal contractors. We understand FAR compliance, 
-            CPARS ratings, and the complexities of contract vehicles.
+            Every solution is built specifically for government contractors. 
+            We understand your compliance needs and operational challenges.
           </p>
         </div>
 
@@ -229,22 +229,22 @@ const ExpertiseSection = () => {
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-4"></div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Federal Market Expertise</h4>
-                  <p className="text-gray-600">FAR/DFARS fluency, GSA schedules, SEWP/CIO-SP3 vehicles, socioeconomic programs</p>
+                  <h4 className="font-semibold text-gray-900">Government Contracting Expertise</h4>
+                  <p className="text-gray-600">Deep understanding of federal procurement, compliance requirements, and contract vehicles</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-4"></div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Advanced Automation</h4>
-                  <p className="text-gray-600">NLP for contract analysis, ML-powered forecasting, API integrations with GovWin/SAM</p>
+                  <h4 className="font-semibold text-gray-900">Cutting-Edge Technology</h4>
+                  <p className="text-gray-600">AI-powered automation, seamless integrations, and custom solutions built for your needs</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-4"></div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Security Cleared Development</h4>
-                  <p className="text-gray-600">NIST 800-171 compliant, FedRAMP-ready architecture, ITAR/EAR considerations</p>
+                  <h4 className="font-semibold text-gray-900">Security & Compliance First</h4>
+                  <p className="text-gray-600">Built to meet federal security standards with compliance baked into every solution</p>
                 </div>
               </div>
             </div>
