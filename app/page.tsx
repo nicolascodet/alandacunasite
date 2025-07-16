@@ -21,15 +21,15 @@ const Header = () => {
       isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-52">
+        <div className="flex items-center justify-between h-32">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <Image 
                 src="/logo.png" 
                 alt="FedFlo.ai" 
-                width={480} 
-                height={160} 
-                className="h-40 md:h-48 w-auto"
+                width={320} 
+                height={120} 
+                className="h-32 md:h-40 w-auto"
                 priority
               />
             </a>
@@ -354,9 +354,9 @@ const Footer = () => {
               <Image 
                 src="/logo.png" 
                 alt="FedFlo.ai" 
-                width={120} 
-                height={40} 
-                className="h-10 w-auto brightness-0 invert"
+                width={200} 
+                height={80} 
+                className="h-20 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-sm">
