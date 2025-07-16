@@ -21,15 +21,15 @@ const Header = () => {
       isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-28">
+        <div className="flex items-center justify-between h-52">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <Image 
                 src="/logo.png" 
                 alt="FedFlo.ai" 
-                width={240} 
-                height={80} 
-                className="h-20 md:h-24 w-auto"
+                width={480} 
+                height={160} 
+                className="h-40 md:h-48 w-auto"
                 priority
               />
             </a>
